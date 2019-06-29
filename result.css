@@ -1,0 +1,153 @@
+@media screen and (min-width: 1308px) {
+      .nav__item_with-sub:hover {
+        -webkit-transform: translateY(20px);
+                transform: translateY(20px); }
+        .nav__item_with-sub:hover .nav__item-inner {
+          background-color: #ffffff;
+          transition: transform .4s;
+          transform: scaleX(1.2);
+          box-shadow: -5px 10px 30px rgba(20, 30, 68, 0.1); }
+        .nav__item_with-sub:hover .nav__sub-list {
+          display: block !important;
+           }
+        .nav__item_with-sub:hover .nav__link-wrap {
+          transform: scaleX(.76);
+        }
+        .nav__item_with-sub:hover .nav__sub-link {
+          display: inline-block;
+          transform: scaleX(.86);
+        }
+1)поменять паддинги у nav__sub-item и nav__sub-link
+2)изменить брейкпоинты у меню на 1188/1187
+3)удалить
+@media screen and (min-width: 1368px) {
+    .form-input {
+      max-width: 152px; } }
+  @media screen and (min-width: 1920px) {
+    .form-input {
+      max-width: 180px; } }
+
+.mainScreen__form-box > * {
+          width: 63%;
+          margin: 0 auto; } }
+
+.mainScreen__form
+@media screen and (min-width: 768px) {
+      .mainScreen__form {
+        max-width: 840px; }
+    @media screen and (min-width: 1368px) {
+      .mainScreen__form {
+        max-width: 986px; }
+4)На мобильных поменять margin-bottom у инпутов на 10рх
+5)
+@media screen and (min-width: 768px) {
+  УДАЛИТЬ
+      .form-input__wrap {
+        max-width: 118px; } }
+
+@media screen and (min-width: 768px) {
+      .form-input_sm {
+                width: 15%;
+                min-width: 90px }}
+@media screen and (min-width: 768px) {
+      .form-input {
+                width: 20%; }}
+
+
+
+    @media screen and (min-width: 768px) {
+      .form__order {
+        flex: 1;
+            flex-basis: 200px; } }
+    @media screen and (min-width: 1368px) {
+      .form__order {
+            flex-basis: 230px; } }
+    @media screen and (min-width: 1920px) {
+      .form__order {
+            flex-basis: 274px; } }
+
+
+
+@media screen and (min-width: 768px) {
+      .form__pages{
+    max-width: 156px;
+  }}
+
+
+
+АНИМАЦИЯ ФОРМЫ
+  УДАЛИТЬ ПСЕВДОЭЛЕМЕНТЫ
+  @media screen and (min-width: 768px) {
+  .form-input.is-open {
+        border-top-left-radius: 0; }
+      .form-input.is-open .form-input__inner {
+        position: absolute;
+        animation: test .4s both;
+        -webkit-box-shadow: -5px 10px 30px rgba(20, 30, 68, 0.1);
+                box-shadow: -5px 10px 30px rgba(20, 30, 68, 0.1); }
+      .form-input.is-open .form-input__wrap{
+        transform: scaleX(.9); }
+      .form-input.is-open .form-input__select-item span{
+        transform: scaleX(.9); 
+        display: inline-block;}
+      .form-input.is-open .form-input__inner{
+        border-top-left-radius: 0; } }
+
+      @keyframes test {
+    0%{
+      transform: translateY(0) scaleX(1);
+    }
+    100%{
+      transform: translateY(-10px) scaleX(1.1);
+    }
+  }
+
+
+  ПОЛОСКИ/убрать бордеры. и у тайтла
+
+  .form-input__select-list-inner > .form-input__select-item:first-child::before {
+    display: none; }
+
+
+
+.form-input__select-title {
+  position: relative;
+}
+
+.form-input__select-title::before, 
+  .form-input__select-item::before {
+        content: '';
+        width: 90%;
+        height: 1px;
+        background-color: #CDDCE7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-transition: .3s ease-in;
+        transition: .3s ease-in; }
+      .form-input__select-item::after {
+        content: '';
+        width: 90%;
+        height: 1px;
+        background-color: #CDDCE7;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        opacity: 0;
+        -webkit-transition: .3s ease-in;
+        transition: .3s ease-in; }
+        .form-input__select-list{
+          overflow: hidden;
+        }
+  .form-input__select-item:hover {
+      color: #27AB83;}
+    .form-input__select-item:hover::before, .form-input__select-item:hover::after {
+      width: 100%;
+      opacity: 1;
+      background-color: #27AB83;
+      z-index: 100; }
+
+
+ @media screen and (min-width: 768px) {
+      .form-input__select-list {
+        bottom: 99%; } }
